@@ -25,13 +25,15 @@ public class Atx {
     }
 
     private String createNumberPhone() {
-        int num2, num3;
-        int set2, set3;
-        num2 = generator.nextInt(8);
-        num3 = generator.nextInt(8);
-        set2 = generator.nextInt(643) + 100;
-        set3 = generator.nextInt(8999) + 1000;
-        return "8(9" + num2 + "" + num3 + ") " + set2 + "-" + set3;
+        int numberOperator;
+        int numberPart1;
+        int numberPart2;
+        int numberPart3;
+        numberOperator = generator.nextInt(8);
+        numberPart1 = generator.nextInt(8);
+        numberPart2 = generator.nextInt(643) + 100;
+        numberPart3 = generator.nextInt(8999) + 1000;
+        return "8(9" + numberOperator + "" + numberPart1 + ") " + numberPart2 + "-" + numberPart3;
     }
     public void deletedCall() {
         while (true) {
